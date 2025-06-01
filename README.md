@@ -30,20 +30,20 @@ A high-performance Python package implementing the **Adaptive Momentum Gradient 
 
 ### From PyPI (recommended)
 ```bash
-pip install amgd-python
+pip install amgd-optimizer
 ```
 
 ### From Source
 ```bash
 git clone https://github.com/yourusername/amgd-python.git
-cd amgd-python
+cd amgd-optimizer
 pip install -e .
 ```
 
 ### Development Installation
 ```bash
 git clone https://github.com/yourusername/amgd-python.git
-cd amgd-python
+cd amgd-optimizer
 pip install -e ".[dev,docs,examples]"
 ```
 
