@@ -20,9 +20,12 @@ from .regressors.poisson_regression import AMGDPoissonRegressor
 from .utils import metrics, validation
 
 # Version info
+# Version info
 __version__ = "1.0.0"
 __author__ = "Ibrahim Bakari"
 __email__ = "2020913072@ogr.cu.edu.tr"
+
+
 
 # Main classes for easy import
 __all__ = [
@@ -34,11 +37,11 @@ __all__ = [
 ]
 
 # Package metadata
-__title__ = "amgd-python"
+__title__ = "amgd-optimizer"
 __description__ = "Adaptive Momentum Gradient Descent for Regularized Poisson Regression"
-__url__ = "https://github.com/yourusername/amgd-python"
+__url__ = "https://github.com/elbakari01/amgd-optimizer"
 __license__ = "MIT"
-__copyright__ = "Copyright 2024 Ibrahim Bakari"
+__copyright__ = "Copyright 2025 Ibrahim Bakari"
 
 # Convenience imports for common usage patterns
 def quick_fit(X, y, penalty='elasticnet', alpha=0.01, **kwargs):

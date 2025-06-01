@@ -3,8 +3,8 @@ requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "amgd-optimizer"
-dynamic = ["version"]
+name = "amgd_optimizer"
+version = "1.0.1"
 description = "Adaptive Momentum Gradient Descent for Regularized Poisson Regression"
 readme = "README.md"
 license = {file = "LICENSE"}
@@ -12,7 +12,7 @@ authors = [
     {name = "Ibrahim Bakari", email = "2020913072@ogr.cu.edu.tr"},
 ]
 maintainers = [
-    {name = "Ibrahim Bakari", email = "2020913072@ogr.cu.edu.tr"},
+    {name = "Ibrahim Bakari", email = "brhmbakari@gmail.com"},
 ]
 keywords = [
     "machine learning",
@@ -68,25 +68,39 @@ examples = [
     "matplotlib>=3.3",
 ]
 all = [
-    "amgd-python[dev,docs,examples]"
+    # Dev dependencies
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=21.0",
+    "flake8>=3.8",
+    "mypy>=0.812",
+    "pre-commit>=2.15",
+    "isort>=5.0",
+    # Docs dependencies
+    "sphinx>=4.0",
+    "sphinx-rtd-theme>=1.0",
+    "sphinxcontrib-napoleon>=0.7",
+    "matplotlib>=3.3",
+    "myst-parser>=0.15",
+    # Examples dependencies
+    "jupyter>=1.0",
+    "seaborn>=0.11",
+    "pandas>=1.3",
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/amgd-python"
-Documentation = "https://amgd-python.readthedocs.io/"
-Repository = "https://github.com/yourusername/amgd-python.git"
-"Bug Tracker" = "https://github.com/yourusername/amgd-python/issues"
-Changelog = "https://github.com/yourusername/amgd-python/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/elbakari01/amgd_optimizer"
+Documentation = "https://amgd_optimizer.readthedocs.io/"
+Repository = "https://github.com/elbakari01/amgd_optimizer.git"
+"Bug Tracker" = "https://github.com/elbakari01/amgd_optimizer/issues"
+Changelog = "https://github.com/elbakari01/amgd_optimizer/blob/main/CHANGELOG.md"
 
 [tool.setuptools]
-packages = ["amgd"]
+packages = ["amgd_optimizer"]
 include-package-data = true
 
-[tool.setuptools.dynamic]
-version = {attr = "amgd.__version__"}
-
 [tool.setuptools.package-data]
-amgd = ["py.typed"]
+amgd_optimizer = ["py.typed"]
 
 [tool.black]
 line-length = 88
@@ -110,7 +124,7 @@ extend-exclude = '''
 profile = "black"
 multi_line_output = 3
 line_length = 88
-known_first_party = ["amgd"]
+known_first_party = ["amgd_optimizer"]
 
 [tool.mypy]
 python_version = "3.8"
@@ -146,7 +160,7 @@ addopts = [
     "--strict-markers",
     "--strict-config",
     "--verbose",
-    "--cov=amgd",
+    "--cov=amgd_optimizer",
     "--cov-report=term-missing",
     "--cov-report=html",
     "--cov-report=xml",
@@ -157,7 +171,7 @@ markers = [
 ]
 
 [tool.coverage.run]
-source = ["amgd"]
+source = ["amgd_optimizer"]
 omit = [
     "*/tests/*",
     "*/examples/*",
@@ -196,4 +210,3 @@ per-file-ignores = [
     "__init__.py:F401",
     "tests/*:F401,F811"
 ]
-
