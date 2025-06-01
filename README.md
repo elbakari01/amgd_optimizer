@@ -53,7 +53,7 @@ pip install -e ".[dev,docs,examples]"
 
 ```python
 import numpy as np
-from amgd import AMGDPoissonRegressor
+from amgd-optimizer import AMGDPoissonRegressor
 
 # Generate sample count data
 np.random.seed(42)
@@ -79,7 +79,7 @@ print(f"Converged in: {model.n_iter_} iterations")
 ### Feature Selection Example
 
 ```python
-from amgd import AMGDPoissonRegressor
+from amgd-optimizer import AMGDPoissonRegressor
 import matplotlib.pyplot as plt
 
 # Fit with different regularization strengths
@@ -106,7 +106,7 @@ plt.show()
 ### Comparison with Other Optimizers
 
 ```python
-from amgd import compare_optimizers
+from amgd-optimizer import compare_optimizers
 
 # Compare AMGD against other methods
 results = compare_optimizers(X, y, methods=['amgd'], alpha=0.01)
@@ -124,7 +124,7 @@ for method, metrics in results.items():
 ### Custom Optimization Parameters
 
 ```python
-from amgd import AMGDOptimizer
+from amgd-optimizer import AMGDOptimizer
 
 # Low-level optimizer access for custom applications
 optimizer = AMGDOptimizer(
@@ -148,7 +148,7 @@ coefficients = optimizer.coef_
 
 ```python
 from sklearn.model_selection import GridSearchCV
-from amgd import AMGDPoissonRegressor
+from amgd-optimizer import AMGDPoissonRegressor
 
 # Hyperparameter tuning
 param_grid = {
@@ -310,3 +310,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   <a href="https://amgd-optimizer.readthedocs.io/">📖 Read the Docs</a> •
   <a href="https://pypi.org/project/amgd-optimizer/">📦 PyPI Package</a>
 </p>
+
