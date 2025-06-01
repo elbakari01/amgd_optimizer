@@ -1,9 +1,9 @@
 # AMGD_Optimizer: Adaptive Momentum Gradient Descent for Regularized Poisson Regression
 
-[![PyPI version](https://badge.fury.io/py/amgd_optimizer.svg)](https://badge.fury.io/py/amgd-optimizer)
+[![PyPI version](https://badge.fury.io/py/amgd_optimizer.svg)](https://badge.fury.io/py/amgd_optimizer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Documentation](https://readthedocs.org/projects/amgd-python/badge/?version=latest)](https://amgd-python.readthedocs.io/)
+[![Documentation](https://readthedocs.org/projects/amgd-optimizer/badge/?version=latest)](https://amgd-optimizer.readthedocs.io/)
 
 A high-performance Python package implementing the **Adaptive Momentum Gradient Descent (AMGD)** algorithm for regularized Poisson regression. AMGD provides superior performance for sparse, high-dimensional count data modeling.
 
@@ -35,14 +35,14 @@ pip install amgd-optimizer
 
 ### From Source
 ```bash
-git clone https://github.com/yourusername/amgd-python.git
+git clone https://github.com/elbakari01/amgd_optimizer.git
 cd amgd-optimizer
 pip install -e .
 ```
 
 ### Development Installation
 ```bash
-git clone https://github.com/yourusername/amgd-python.git
+git clone https://github.com/elbakari01/amgd_optimizer.git
 cd amgd-optimizer
 pip install -e ".[dev,docs,examples]"
 ```
@@ -239,9 +239,9 @@ AMGD is particularly effective for:
 
 ## 📚 Documentation
 
-- **Full Documentation**: [https://amgd-python.readthedocs.io/](https://amgd-python.readthedocs.io/)
-- **API Reference**: [https://amgd-python.readthedocs.io/en/latest/api.html](https://amgd-python.readthedocs.io/en/latest/api.html)
-- **Examples**: [https://github.com/yourusername/amgd-python/tree/main/examples](https://github.com/yourusername/amgd-python/tree/main/examples)
+- **Full Documentation**: [https://amgd-optimizer.readthedocs.io/](https://amgd-optimizer.readthedocs.io/)
+- **API Reference**: [https://amgd-optimizer.readthedocs.io/en/latest/api.html](https://amgd-optimizer.readthedocs.io/en/latest/api.html)
+- **Examples**: [https://github.com/yourusername/amgd-optimizer/tree/main/examples](https://github.com/yourusername/amgd-optimizer/tree/main/examples)
 - **Paper**: "Adaptive Momentum Gradient Descent: A New Algorithm in Regularized Poisson Regression"
 
 ## 🤝 Contributing
@@ -250,15 +250,15 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ### Development Setup
 ```bash
-git clone https://github.com/yourusername/amgd-python.git
-cd amgd-python
+git clone https://github.com/elbakari01/amgd_optimizer
+cd amgd-optimizer
 pip install -e ".[dev]"
 pre-commit install
 ```
 
 ### Running Tests
 ```bash
-pytest tests/ -v --cov=amgd
+pytest tests/ -v --cov=amgd-optimizer
 ```
 
 ## 📄 Citation
@@ -274,10 +274,10 @@ If you use AMGD in your research, please cite:
   publisher={Publisher}
 }
 
-@software{amgd_python,
-  title={AMGD-Python: Adaptive Momentum Gradient Descent for Regularized Poisson Regression},
+@software{amgd_optimizer,
+  title={AMGD-optimizer: Adaptive Momentum Gradient Descent for Regularized Poisson Regression},
   author={Bakari, Ibrahim},
-  url={https://github.com/yourusername/amgd-python},
+  url={https://github.com/yourusername/amgd-optimizer},
   version={0.1.0},
   year={2024}
 }
@@ -285,8 +285,8 @@ If you use AMGD in your research, please cite:
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/amgd-python/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/amgd-python/discussions)
+- **Issues**: [GitHub Issues](https://github.com/yourusername/amgd-optimizer/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/yourusername/amgd-optimizer/discussions)
 - **Email**: 2020913072@ogr.cu.edu.tr
 
 ## 📜 License
@@ -302,11 +302,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  <strong>AMGD-Python: Making sparse Poisson regression fast and effective</strong>
+  <strong>AMGD-optimizer: Making sparse Poisson regression fast and effective</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/yourusername/amgd-python">⭐ Star us on GitHub</a> •
-  <a href="https://amgd-python.readthedocs.io/">📖 Read the Docs</a> •
-  <a href="https://pypi.org/project/amgd-python/">📦 PyPI Package</a>
+  <a href="https://github.com/yourusername/amgd-optimizer">⭐ Star us on GitHub</a> •
+  <a href="https://amgd-optimizer.readthedocs.io/">📖 Read the Docs</a> •
+  <a href="https://pypi.org/project/amgd-optimizer/">📦 PyPI Package</a>
 </p>
