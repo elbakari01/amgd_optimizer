@@ -1,6 +1,6 @@
 # AMGD_Optimizer: Adaptive Momentum Gradient Descent for Regularized Poisson Regression
 
-[![PyPI version](https://badge.fury.io/py/amgd_optimizer.svg)](https://badge.fury.io/py/amgd_optimizer)
+[![PyPI version](https://badge.fury.io/py/amgd_optimizer.svg)](https://badge.fury.io/py/amgd-optimizer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Documentation](https://readthedocs.org/projects/amgd-python/badge/?version=latest)](https://amgd-python.readthedocs.io/)
